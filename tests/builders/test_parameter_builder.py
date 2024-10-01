@@ -34,6 +34,17 @@ schema_data_provider = (
             style=HeaderParameterStyle.SIMPLE,
             schema=string_schema,
             explode=False,
+            example="abc",
+            examples= {
+                "foo": {
+                    "summary": "A foo example",
+                    "value": {"foo": "bar"}
+                },
+                "bar": {
+                    "summary": "A bar example",
+                    "value": {"bar": "baz"}
+                }
+            }
         ),
         _get_schema_factory_mock(string_schema)
     ),

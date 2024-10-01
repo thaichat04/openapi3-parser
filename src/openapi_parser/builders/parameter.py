@@ -44,6 +44,8 @@ class ParameterBuilder:
             "description": PropertyMeta(name="description", cast=str),
             "deprecated": PropertyMeta(name="deprecated", cast=None),
             "explode": PropertyMeta(name="explode", cast=None),
+            "example": PropertyMeta(name="example", cast=None),
+            "examples": PropertyMeta(name="examples", cast=dict),
         }
 
         attrs = extract_typed_props(data, attrs_map)
